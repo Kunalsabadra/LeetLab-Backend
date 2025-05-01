@@ -50,7 +50,7 @@ model Problem {
   editorial   String?
 
   testcases         Json
-  codeSnippet       String
+  codeSnippet       Json
   referenceSolution Json
 
   createdAt DateTime @default(now())

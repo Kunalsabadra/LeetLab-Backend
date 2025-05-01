@@ -22,7 +22,7 @@ export const register = async (req, res) => {
                 name: name,
                 email: email,
                 password: hashedPassword,
-                role: UserRole.USER
+                role: UserRole.ADMIN
             }
         })
         const token = jwt.sign({ id: newUser.id }, process.env.JWT_SECRET, {
