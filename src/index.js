@@ -5,6 +5,7 @@ import problemRoutes from './routes/problem.routes.js';
 
 import authRoutes from './routes/auth.routes.js';
 import { executeCodeRoutes } from './routes/executeCode.routes.js';
+import { submissionRoutes } from './routes/submission.routes.js';
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.get('/api/v1/test', (req, res) => {
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/problems", problemRoutes);
 app.use("/api/v1/execute-code", executeCodeRoutes)
+app.use("/api/v1/submission", submissionRoutes);
 
 
 
